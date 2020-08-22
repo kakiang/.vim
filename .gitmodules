@@ -112,3 +112,12 @@
 [submodule "bundle/openai.vim"]
 	path = bundle/openai.vim
 	url = https://github.com/jessfraz/openai.vim.git
+[submodule "sonokai"]
+	path = sonokai
+	url = https://github.com/sainnhe/sonokai.git
+[submodule "vim-flutter"]
+	path = vim-flutter
+	url = https://github.com/thosakwe/vim-flutter.git
+[submodule "dart-vim-plugin"]
+	path = dart-vim-plugin
+	url = https://github.com/dart-lang/dart-vim-plugin.git

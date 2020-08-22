@@ -151,12 +151,25 @@ if has('gui_running')
   set regexpengine=1
   syntax enable
 endif
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+" set background=dark
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme solarized
+" colorscheme solarized
+
+" Important!!
+if has('termguicolors')
+  set termguicolors
+endif
+
+" The configuration options should be placed before `colorscheme sonokai`.
+let g:sonokai_style = 'andromeda'
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 1
+
+colorscheme sonokai
+
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -575,7 +588,7 @@ let g:vim_markdown_json_frontmatter = 1
 
 " =================== vim-airline ========================
 
-let g:airline_theme='solarized'
+let g:airline_theme='bubblegum'
 
 " set to use powerline fonts when not in a ssh session
 let g:remoteSession = ($STY == "")
